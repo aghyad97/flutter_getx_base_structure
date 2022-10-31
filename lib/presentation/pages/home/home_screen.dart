@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_getx_base_architecture/core/screen.dart';
-import 'package:flutter_getx_base_architecture/presentation/controllers/home/home_controller.dart';
+import 'package:flutter_getx_base_structure/core/screen.dart';
+import 'package:flutter_getx_base_structure/presentation/controllers/home/home_controller.dart';
 
 class HomeScreen extends Screen<HomeController> {
   HomeScreen({Key? key}) : super(key: key);

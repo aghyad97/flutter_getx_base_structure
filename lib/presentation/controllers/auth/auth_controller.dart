@@ -1,7 +1,7 @@
-import 'package:flutter_getx_base_architecture/app/services/local_storage.dart';
-import 'package:flutter_getx_base_architecture/core/controller.dart';
-import 'package:flutter_getx_base_architecture/domain/entities/user.dart';
-import 'package:flutter_getx_base_architecture/domain/usecases/signup_use_case.dart';
+import 'package:flutter_getx_base_structure/app/services/local_storage.dart';
+import 'package:flutter_getx_base_structure/core/controller.dart';
+import 'package:flutter_getx_base_structure/domain/entities/user.dart';
+import 'package:flutter_getx_base_structure/domain/usecases/signup_use_case.dart';
 import 'package:get/get.dart';
 
 class AuthController extends Controller {

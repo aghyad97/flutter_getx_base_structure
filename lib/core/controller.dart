@@ -1,5 +1,5 @@
-import 'package:flutter_getx_base_architecture/app/network/exceptions/service_unavailable_exception.dart';
-import 'package:flutter_getx_base_architecture/flavors/build_config.dart';
+import 'package:flutter_getx_base_structure/app/network/exceptions/service_unavailable_exception.dart';
+import 'package:flutter_getx_base_structure/flavors/build_config.dart';
 import 'package:get/get.dart';
 import 'package:logger/logger.dart';
 

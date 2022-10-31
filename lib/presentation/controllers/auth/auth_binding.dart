@@ -1,5 +1,5 @@
-import 'package:flutter_getx_base_architecture/data/repositories/auth_repository.dart';
-import 'package:flutter_getx_base_architecture/domain/usecases/signup_use_case.dart';
+import 'package:flutter_getx_base_structure/data/repositories/auth_repository.dart';
+import 'package:flutter_getx_base_structure/domain/usecases/signup_use_case.dart';
 import 'package:get/get.dart';
 
 import 'auth_controller.dart';

@@ -1,4 +1,4 @@
-import 'package:flutter_getx_base_architecture/constants/app_values.dart';
+import 'package:flutter_getx_base_structure/constants/app_values.dart';
 import 'package:logger/logger.dart';
 
 class EnvConfig {

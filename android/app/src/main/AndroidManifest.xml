@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.flutter_getx_base_architecture">
+    package="com.example.flutter_getx_base_structure">
    <application
-        android:label="flutter_getx_base_architecture"
+        android:label="flutter_getx_base_structure"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

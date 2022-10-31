@@ -1,4 +1,4 @@
-# flutter_getx_base_architecture
+# flutter_getx_base_structure
 
 A new Flutter project.
 

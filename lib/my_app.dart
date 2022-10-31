@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_getx_base_architecture/app/theme/app_theme.dart';
+import 'package:flutter_getx_base_structure/app/theme/app_theme.dart';
 import 'package:get/get.dart';
 
 import 'app/routes/app_pages.dart';
