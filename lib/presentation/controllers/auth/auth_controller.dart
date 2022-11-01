@@ -5,8 +5,8 @@ import 'package:flutter_getx_base_structure/domain/usecases/signup_use_case.dart
 import 'package:get/get.dart';
 
 class AuthController extends Controller {
-  AuthController(this._loginUseCase);
-  final SignUpUseCase _loginUseCase;
+  AuthController(this._signUpUseCase);
+  final SignUpUseCase _signUpUseCase;
   final store = Get.find<LocalStorageService>();
   var isLoggedIn = false.obs;
 
@@ -20,7 +20,7 @@ class AuthController extends Controller {
 
   signUpWith(String username) async {
     try {
-      final user = await _loginUseCase.execute(username);
+      final user = await _signUpUseCase.execute(username);
       store.user = user;
       isLoggedIn.value = true;
       isLoggedIn.refresh();
@@ -31,13 +31,4 @@ class AuthController extends Controller {
     store.user = null;
     isLoggedIn.value = false;
   }
-
-  @override
-  void clearController() {}
-
-  @override
-  void initController() {}
-
-  @override
-  void readyController() {}
 }

@@ -7,7 +7,8 @@ class SignUpUseCase extends ParamUseCase<User, String> {
   SignUpUseCase(this._repo);
 
   @override
-  Future<User> execute(String username) {
-    return _repo.signUp(username);
+  Future<User> execute(String params) async {
+    final response = await _repo.signUp(params);
+    return User.fromJson(response.data);
   }
 }

@@ -24,10 +24,6 @@ enum PageState {
 }
 
 abstract class Controller extends GetxController with StateMixin {
-  void initController();
-  void clearController();
-  void readyController();
-
   final Logger logger = BuildConfig.instance.config.logger;
 
   final logoutController = false.obs;

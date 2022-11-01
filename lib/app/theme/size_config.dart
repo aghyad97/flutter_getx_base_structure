@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+bool _lock = false;
+
 class SizeConfig {
   static double? _screenWidth;
   static double? _screenHeight;
@@ -15,6 +17,10 @@ class SizeConfig {
   static double? widthMultiplier;
 
   void init(BoxConstraints constraints) {
+    // To prevent init again when screen is resizing
+    // this happens during animation of soft closing app
+    // on iOS
+    if (_lock) return;
     _screenWidth = constraints.maxWidth;
     _screenHeight = constraints.maxHeight;
 
@@ -25,6 +31,7 @@ class SizeConfig {
     imageSizeMultiplier = _blockWidth;
     heightMultiplier = _blockHeight;
     widthMultiplier = _blockWidth;
+    _lock = true;
   }
 }
 

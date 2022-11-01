@@ -26,6 +26,7 @@ class MyApp extends StatelessWidget {
           theme: appThemeData,
           defaultTransition: Transition.cupertino,
           getPages: AppPages.pages,
+          initialRoute: Routes.initial,
           locale: const Locale('en', 'US'),
           fallbackLocale: const Locale('en', 'US'),
           smartManagement: SmartManagement.full,

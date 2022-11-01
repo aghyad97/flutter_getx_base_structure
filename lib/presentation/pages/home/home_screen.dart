@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_getx_base_structure/core/screen.dart';
 import 'package:flutter_getx_base_structure/presentation/controllers/home/home_controller.dart';
+import 'package:flutter_getx_base_structure/presentation/pages/home/components/home_tablet_main_component.dart';
+
+import 'components/home_mobile_main_component.dart';
 
 class HomeScreen extends Screen<HomeController> {
   HomeScreen({Key? key}) : super(key: key);
@@ -12,11 +15,11 @@ class HomeScreen extends Screen<HomeController> {
 
   @override
   Widget? tablet() {
-    return super.tablet();
+    return const HomeTabletMainComponent();
   }
 
   @override
   Widget? phone() {
-    return super.phone();
+    return const HomeMobileMainComponent();
   }
 }
