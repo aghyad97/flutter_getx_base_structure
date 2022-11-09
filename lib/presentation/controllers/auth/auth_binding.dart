@@ -1,5 +1,4 @@
-import 'package:flutter_getx_base_structure/data/repositories/auth_repository.dart';
-import 'package:flutter_getx_base_structure/domain/usecases/signup_use_case.dart';
+import 'package:flutter_getx_base_structure/data/repositories/auth_repository_impl.dart';
 import 'package:get/get.dart';
 
 import 'auth_controller.dart';
@@ -7,7 +6,7 @@ import 'auth_controller.dart';
 class AuthBinding extends Bindings {
   @override
   void dependencies() {
-    Get.lazyPut(() => SignUpUseCase(Get.find<AuthenticationRepositoryIml>()));
-    Get.put(AuthController(Get.find()), permanent: true);
+    Get.put(
+        AuthController(repository: Get.find<AuthenticationRepositoryIml>()));
   }
 }

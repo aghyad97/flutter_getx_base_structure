@@ -1,8 +1,9 @@
 import 'dart:convert';
 
 import 'package:flutter/foundation.dart';
+import 'package:flutter_getx_base_structure/core/model.dart';
 
-class ApiResponse {
+class ApiResponse extends Model {
   bool? status;
   int? statusCode;
   String? title;

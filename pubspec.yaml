@@ -47,6 +47,8 @@ dependencies:
   google_fonts: ^3.0.1
   dio: ^4.0.6
   internet_connection_checker: ^1.0.0+1
+  awesome_notifications: ^0.7.4+1
+  awesome_notifications_fcm: ^0.7.4+1
   flutter_localizations:
     sdk: flutter
   # The following adds the Cupertino Icons font to your application.
