@@ -6,7 +6,9 @@ import 'auth_controller.dart';
 class AuthBinding extends Bindings {
   @override
   void dependencies() {
-    Get.put(
-        AuthController(repository: Get.find<AuthenticationRepositoryIml>()));
+    Get.lazyPut(
+        () =>
+            AuthController(repository: Get.find<AuthenticationRepositoryIml>()),
+        tag: (AuthController).toString());
   }
 }

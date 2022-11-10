@@ -74,6 +74,28 @@ dev_dependencies:
   cloud_firestore_odm_generator: ^1.0.0-dev.18
   json_serializable: ^6.2.0
   icons_launcher: ^2.0.5
+  flutter_asset_generator: ^1.0.2
+
+# fgen -h
+# -w, --[no-]watch    Continue to monitor changes after execution of orders.
+#                   (defaults to on)
+
+# -p, --[no-]preview  Generate file with preview comments.
+#                   (defaults to on)
+
+# -o, --output        Your resource file path.
+#                   If it's a relative path, the relative flutter root directory
+#                   (defaults to "lib/const/resource.dart")
+
+# -s, --src           Flutter project root path
+#                   (defaults to ".")
+
+# -n, --name          The class name for the constant.
+#                   (defaults to "R")
+
+# -h, --[no-]help     Help usage
+
+# -d, --[no-]debug    debug info
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 

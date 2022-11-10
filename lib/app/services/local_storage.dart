@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:flutter_getx_base_structure/domain/entities/user.dart';
+import 'package:flutter_getx_base_structure/data/models/user.dart';
 import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -21,7 +21,7 @@ class LocalStorageService extends GetxService {
       return null;
     }
     Map<String, dynamic> map = jsonDecode(rawJson);
-    return User.fromJson(map);
+    return User.fromMap(map);
   }
 
   set user(User? value) {
