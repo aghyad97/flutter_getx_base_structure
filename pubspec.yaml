@@ -45,6 +45,7 @@ dependencies:
   url_launcher: ^6.1.6
   permission_handler: ^10.2.0
   google_fonts: ^3.0.1
+  auto_route: ^7.1.0
   dio: ^4.0.6
   internet_connection_checker: ^1.0.0+1
   awesome_notifications: ^0.7.4+1

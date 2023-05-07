@@ -12,15 +12,19 @@ class AuthController extends Controller {
   var isLoggedIn = false.obs;
 
   User? get user => store.user;
+  RxString x = "".obs;
 
   @override
   void onInit() async {
     super.onInit();
     isLoggedIn.value = store.user != null;
+    x.value = Get.arguments['test'];
   }
 
   logout() {
     store.user = null;
     isLoggedIn.value = false;
   }
+
+
 }
